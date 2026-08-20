@@ -1,0 +1,690 @@
+[20Aug2026 13:29:39.159] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[20Aug2026 13:29:39.164] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.8 by Microsoft; OS Windows 10 arch amd64 version 10.0
+[20Aug2026 13:29:39.579] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[20Aug2026 13:29:39.611] [main/INFO] [gg.essential.loader.stage1.EssentialLoaderBase/]: Updating Essential Loader (stage2) version 1.7.4 (ee316308052751b5ace6e379c769b0dc) from union:/C:/Users/user/Desktop/Modded/mods/Essential_1-3-10-8_forge_1-20-1.jar%23129!/essential-loader-stage2-modlauncher9-1.7.4.jar
+[20Aug2026 13:29:39.674] [main/FATAL] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Encountered serious error loading transformation service, expect problems
+java.util.ServiceConfigurationError: cpw.mods.modlauncher.api.ITransformationService: Provider gg.essential.container.loader.stage0.EssentialTransformationService could not be instantiated
+	at java.util.ServiceLoader.fail(ServiceLoader.java:586) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:813) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:729) ~[?:?]
+	at cpw.mods.modlauncher.util.ServiceLoaderUtils.lambda$streamWithErrorHandling$0(ServiceLoaderUtils.java:39) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ServiceLoader$ProviderSpliterator.tryAdvance(ServiceLoader.java:1499) ~[?:?]
+	at java.util.Spliterator.forEachRemaining(Spliterator.java:332) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.discoverServices(TransformationServicesHandler.java:133) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:87) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:27) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1(EssentialTransformationServiceBase.java:47) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:25) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/codec/digest/DigestUtils
+	at gg.essential.loader.stage1.EssentialLoaderBase.getChecksum(EssentialLoaderBase.java:356) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.downloadFile(EssentialLoaderBase.java:473) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.doDownload(EssentialLoaderBase.java:326) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.load(EssentialLoaderBase.java:176) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:46) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationService.<init>(EssentialTransformationService.java:28) ~[?:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1(EssentialTransformationServiceBase.java:47) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:25) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.codec.digest.DigestUtils
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.getChecksum(EssentialLoaderBase.java:356) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.downloadFile(EssentialLoaderBase.java:473) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.doDownload(EssentialLoaderBase.java:326) ~[?:?]
+	at gg.essential.loader.stage1.EssentialLoaderBase.load(EssentialLoaderBase.java:176) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:46) ~[?:?]
+	at gg.essential.loader.stage1.EssentialTransformationService.<init>(EssentialTransformationService.java:28) ~[?:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1(EssentialTransformationServiceBase.java:47) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.loadStage1OrThrow(EssentialTransformationServiceBase.java:25) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.lambda$new$0(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.util.DelegatingTransformationServiceBase.<init>(DelegatingTransformationServiceBase.java:13) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationServiceBase.<init>(EssentialTransformationServiceBase.java:20) ~[?:?]
+	at gg.essential.container.loader.stage0.EssentialTransformationService.<init>(EssentialTransformationService.java:7) ~[?:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:789) ~[?:?]
+	... 16 more
+[20Aug2026 13:29:39.755] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/user/Desktop/Modded/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[20Aug2026 13:29:40.150] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {mods folder locator at C:\Users\user\Desktop\Modded\mods} returned 1 files which are client-side-only mods, but we're on a dedicated server. They will be skipped!
+[20Aug2026 13:29:40.320] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\user\Desktop\Modded\libraries\net\minecraftforge\fmlcore\1.20.1-47.4.10\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[20Aug2026 13:29:40.329] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\user\Desktop\Modded\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.4.10\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[20Aug2026 13:29:40.338] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\user\Desktop\Modded\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.4.10\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[20Aug2026 13:29:40.346] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\user\Desktop\Modded\libraries\net\minecraftforge\mclanguage\1.20.1-47.4.10\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[20Aug2026 13:29:40.577] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 4 dependencies adding them to mods collection
+[20Aug2026 13:29:41.914] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[20Aug2026 13:29:41.988] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [com.sonicether.soundphysics.MixinConnector]
+[20Aug2026 13:29:41.990] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[20Aug2026 13:29:42.016] [main/WARN] [mixin/]: Reference map 'pandalib-common-common-refmap.json' for pandalib-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[20Aug2026 13:29:42.022] [main/WARN] [mixin/]: Reference map '' for chat_heads.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[20Aug2026 13:29:42.035] [main/INFO] [Embeddium/]: Loaded configuration file for Embeddium: 75 options available, 0 override(s) found
+[20Aug2026 13:29:42.547] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[20Aug2026 13:29:42.562] [main/INFO] [mixin/]: Mixing server.MixinDedicatedServer from mixins/common/nochatreports.mixins.json into net.minecraft.server.dedicated.DedicatedServer
+[20Aug2026 13:29:47.349] [main/INFO] [mixin/]: Mixing common.MixinFriendlyByteBuf from mixins/common/nochatreports.mixins.json into net.minecraft.network.FriendlyByteBuf
+[20Aug2026 13:29:47.352] [main/INFO] [mixin/]: Renaming synthetic method lambda$onWriteJsonWithCodec$1(Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException; to md337b0f$lambda$onWriteJsonWithCodec$1$0 in mixins/common/nochatreports.mixins.json:common.MixinFriendlyByteBuf
+[20Aug2026 13:29:47.353] [main/INFO] [mixin/]: Renaming synthetic method lambda$onReadJsonWithCodec$0(Ljava/lang/String;)Lio/netty/handler/codec/DecoderException; to md337b0f$lambda$onReadJsonWithCodec$0$1 in mixins/common/nochatreports.mixins.json:common.MixinFriendlyByteBuf
+[20Aug2026 13:29:47.641] [main/INFO] [mixin/]: Mixing server.MixinServerGamePacketListenerImpl from mixins/common/nochatreports.mixins.json into net.minecraft.server.network.ServerGamePacketListenerImpl
+[20Aug2026 13:29:48.648] [modloading-worker-0/INFO] [NoChatReports/]: KONNICHIWA ZA WARUDO!
+[20Aug2026 13:29:48.648] [modloading-worker-0/INFO] [NoChatReports/]: Default JVM text encoding is: UTF-8
+[20Aug2026 13:29:48.655] [modloading-worker-0/INFO] [NoChatReports/]: Reading config file NoChatReports/NCR-Common.json...
+[20Aug2026 13:29:48.659] [modloading-worker-0/INFO] [Collective/]: Loading Collective version 8.20.
+[20Aug2026 13:29:48.661] [modloading-worker-0/INFO] [NoChatReports/]: Writing config file NoChatReports/NCR-Common.json...
+[20Aug2026 13:29:48.687] [modloading-worker-0/INFO] [JamLib/]: Initializing JamLib on Forge
+[20Aug2026 13:29:48.721] [modloading-worker-0/INFO] [fallingtrees | Config/]: Successfully loaded config 'fallingtrees_common'
+[20Aug2026 13:29:48.727] [modloading-worker-0/INFO] [fallingtrees | Config/]: Successfully saved config 'fallingtrees_common'
+[20Aug2026 13:29:48.741] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[20Aug2026 13:29:48.741] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[20Aug2026 13:29:48.774] [modloading-worker-0/INFO] [JamLib/]: Updated config file at C:\Users\user\Desktop\Modded\config\rightclickharvest.json5
+[20Aug2026 13:29:48.775] [modloading-worker-0/INFO] [Right Click Harvest/]: Initializing Right Click Harvest on FORGE
+[20Aug2026 13:29:48.825] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[20Aug2026 13:29:49.611] [Thread-2/WARN] [Collective/]: [Update] Collective has an update available: 8.20 -> 8.39
+[20Aug2026 13:29:49.863] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Compatibility version 20
+[20Aug2026 13:29:49.884] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Starting version check at https://update.maxhenkel.de/forge/voicechat
+[20Aug2026 13:29:49.920] [modloading-worker-0/INFO] [mixin/]: Mixing server.MixinPlayerList from mixins/common/nochatreports.mixins.json into net.minecraft.server.players.PlayerList
+[20Aug2026 13:29:49.941] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loading plugins
+[20Aug2026 13:29:49.947] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loaded 1 plugin(s)
+[20Aug2026 13:29:49.948] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initializing plugins
+[20Aug2026 13:29:49.961] [modloading-worker-0/INFO] [Sound Physics - General/]: Initializing Simple Voice Chat integration
+[20Aug2026 13:29:49.961] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initialized 1 plugin(s)
+[20Aug2026 13:29:49.964] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Registering events for 'sound_physics_remastered'
+[20Aug2026 13:29:50.856] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20Aug2026 13:29:51.120] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Found status: OUTDATED Current: 1.20.1-2.6.16 Target: 1.20.1-2.6.22
+[20Aug2026 13:29:51.123] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [sound_physics_remastered] Starting version check at https://update.maxhenkel.de/forge/sound_physics_remastered
+[20Aug2026 13:29:51.385] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [sound_physics_remastered] Found status: AHEAD Current: 1.20.1-1.5.1 Target: null
+[20Aug2026 13:29:51.386] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [badmobs] Starting version check at https://updates.blamejared.com/get?n=badmobs&gv=1.20.1
+[20Aug2026 13:29:51.429] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/user/Desktop/Modded/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23159!/assets/.mcassetsroot' uses unexpected schema
+[20Aug2026 13:29:51.429] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/user/Desktop/Modded/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23159!/data/.mcassetsroot' uses unexpected schema
+[20Aug2026 13:29:51.950] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [badmobs] Found status: BETA Current: 19.0.4 Target: 19.0.4
+[20Aug2026 13:29:51.950] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[20Aug2026 13:29:52.837] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
+[20Aug2026 13:29:52.838] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [presencefootsteps] Starting version check at https://forge.curseupdate.com/433068/presencefootsteps
+[20Aug2026 13:29:52.840] [Worker-Main-8/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:obelisk_break as it is missing following references: #minecraft:glass (from its_not_real-1.1.1.1.1.1.1.1.jar)
+[20Aug2026 13:29:53.190] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[20Aug2026 13:29:53.305] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1273 advancements
+[20Aug2026 13:29:53.751] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[20Aug2026 13:29:53.751] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[20Aug2026 13:29:53.752] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[20Aug2026 13:29:53.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[20Aug2026 13:29:53.806] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on 0.0.0.0:25565
+[20Aug2026 13:29:53.816] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[20Aug2026 13:29:53.936] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20Aug2026 13:29:53.937] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[20Aug2026 13:29:53.938] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20Aug2026 13:29:53.938] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[20Aug2026 13:29:54.017] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[20Aug2026 13:29:54.350] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [presencefootsteps] Found status: BETA Current: 1.20.1-1.9.1-beta.1 Target: 1.20.1-1.9.1-beta.1
+[20Aug2026 13:29:55.546] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[20Aug2026 13:29:57.980] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:58.013] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:58.023] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:58.035] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:58.048] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:58.058] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:58.549] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Aug2026 13:29:59.047] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
+[20Aug2026 13:29:59.548] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 94%
+[20Aug2026 13:29:59.577] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4031 ms
+[20Aug2026 13:29:59.578] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (5.621s)! For help, type "help"
+[20Aug2026 13:29:59.578] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting GS4 status listener
+[20Aug2026 13:29:59.587] [Server thread/INFO] [net.minecraft.server.rcon.thread.GenericThread/]: Thread Query Listener started
+[20Aug2026 13:29:59.587] [Query Listener #1/INFO] [net.minecraft.server.rcon.thread.QueryThreadGs4/]: Query running on 0.0.0.0:25565
+[20Aug2026 13:29:59.608] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[20Aug2026 13:29:59.610] [Server thread/WARN] [voicechat/]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[20Aug2026 13:29:59.622] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Using server-ip as bind address: 0.0.0.0
+[20Aug2026 13:29:59.623] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice chat server started at 0.0.0.0:24454
+[20Aug2026 13:29:59.625] [Server thread/INFO] [mixin/]: Mixing common.MixinServerStatus from mixins/common/nochatreports.mixins.json into net.minecraft.network.protocol.status.ServerStatus
+[20Aug2026 13:30:19.088] [Netty Server IO #1/INFO] [mixin/]: Mixing server.MixinServerboundChatCommandPacket from mixins/common/nochatreports.mixins.json into net.minecraft.network.protocol.game.ServerboundChatCommandPacket
+[20Aug2026 13:30:19.091] [Netty Server IO #1/INFO] [mixin/]: Mixing server.MixinServerboundChatPacket from mixins/common/nochatreports.mixins.json into net.minecraft.network.protocol.game.ServerboundChatPacket
+[20Aug2026 13:30:19.093] [Netty Server IO #1/INFO] [mixin/]: Mixing server.MixinServerboundChatSessionUpdatePacket from mixins/common/nochatreports.mixins.json into net.minecraft.network.protocol.game.ServerboundChatSessionUpdatePacket
+[20Aug2026 13:30:19.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Server] hi
+[20Aug2026 13:30:20.762] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Shinzgami[/10.25.99.21:33983] logged in with entity id 31 at (3.4264174904563856, 99.0, 4.095093475815635)
+[20Aug2026 13:30:20.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami joined the game
+[20Aug2026 13:30:21.023] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Shinzgami
+[20Aug2026 13:30:21.596] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 13:30:22.616] [Netty Server IO #1/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Shinzgami
+[20Aug2026 13:30:22.620] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Shinzgami (20)
+[20Aug2026 13:30:22.624] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Shinzgami
+[20Aug2026 13:30:23.350] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player cbd98727-12d9-37ed-8272-21579cc4249f
+[20Aug2026 13:30:24.349] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player cbd98727-12d9-37ed-8272-21579cc4249f
+[20Aug2026 13:30:24.353] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player Shinzgami (cbd98727-12d9-37ed-8272-21579cc4249f) successfully connected to voice chat
+[20Aug2026 13:30:45.641] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Teleported Shinzgami to -569.500000, 99.000000, 1801.500000]
+[20Aug2026 13:32:50.482] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Shinzgami lost connection: Disconnected
+[20Aug2026 13:32:50.483] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami left the game
+[20Aug2026 13:32:50.486] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Shinzgami
+[20Aug2026 13:32:59.310] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Shinzgami[/10.25.99.21:34054] logged in with entity id 25080 at (-567.0834134038844, 67.0, 1795.6327746472969)
+[20Aug2026 13:32:59.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami joined the game
+[20Aug2026 13:32:59.324] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Shinzgami
+[20Aug2026 13:33:00.991] [Netty Server IO #3/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Shinzgami
+[20Aug2026 13:33:01.000] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Shinzgami (20)
+[20Aug2026 13:33:01.001] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Shinzgami
+[20Aug2026 13:33:01.581] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player cbd98727-12d9-37ed-8272-21579cc4249f
+[20Aug2026 13:33:02.582] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player cbd98727-12d9-37ed-8272-21579cc4249f
+[20Aug2026 13:33:02.583] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player Shinzgami (cbd98727-12d9-37ed-8272-21579cc4249f) successfully connected to voice chat
+[20Aug2026 13:33:05.231] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Shinzgami lost connection: Disconnected
+[20Aug2026 13:33:05.232] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami left the game
+[20Aug2026 13:33:05.233] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Shinzgami
+[20Aug2026 14:12:03.534] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Shinzgami[/192.168.1.6:35525] logged in with entity id 26050 at (-567.0834134038844, 67.0, 1795.6327746472969)
+[20Aug2026 14:12:03.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami joined the game
+[20Aug2026 14:12:03.577] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Shinzgami
+[20Aug2026 14:12:05.565] [Netty Server IO #7/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Shinzgami
+[20Aug2026 14:12:05.567] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Shinzgami (20)
+[20Aug2026 14:12:05.567] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Shinzgami
+[20Aug2026 14:12:24.307] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Moony09_[/192.168.1.6:35539] logged in with entity id 29717 at (-6.5, 106.0, 0.5)
+[20Aug2026 14:12:24.310] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Moony09_ joined the game
+[20Aug2026 14:12:24.423] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Moony09_
+[20Aug2026 14:12:24.470] [Netty Server IO #10/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Moony09_
+[20Aug2026 14:12:24.484] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Moony09_ (20)
+[20Aug2026 14:12:24.485] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Moony09_
+[20Aug2026 14:14:37.334] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 14:17:11.661] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sadkewa[/192.168.1.6:35690] logged in with entity id 97814 at (3.5, 90.0, -6.5)
+[20Aug2026 14:17:11.664] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa joined the game
+[20Aug2026 14:17:11.699] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sadkewa
+[20Aug2026 14:17:13.464] [Netty Server IO #12/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sadkewa
+[20Aug2026 14:17:13.491] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sadkewa (20)
+[20Aug2026 14:17:13.492] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sadkewa
+[20Aug2026 14:17:30.261] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=4, y=89, z=0}
+[20Aug2026 14:17:44.648] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Teleported Moony09_ to Shinzgami]
+[20Aug2026 14:17:50.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Teleported sadkewa to Shinzgami]
+[20Aug2026 14:18:25.976] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sarah[/192.168.1.6:35714] logged in with entity id 116770 at (10.5, 97.0, 1.5)
+[20Aug2026 14:18:25.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah joined the game
+[20Aug2026 14:18:26.050] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sarah
+[20Aug2026 14:18:26.302] [Netty Server IO #13/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sarah
+[20Aug2026 14:18:26.303] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sarah (20)
+[20Aug2026 14:18:26.305] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sarah
+[20Aug2026 14:18:40.071] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh
+[20Aug2026 14:18:42.338] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> CAN YOU TP ME
+[20Aug2026 14:18:50.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> UH OH
+[20Aug2026 14:18:52.163] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Teleported sarah to Shinzgami]
+[20Aug2026 14:19:17.786] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> IM SUPER LAGGY
+[20Aug2026 14:19:27.383] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> OH SORRY FOX
+[20Aug2026 14:19:33.417] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sadkewa> same for me
+[20Aug2026 14:20:08.010] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Polar34_[/192.168.1.6:35791] logged in with entity id 142678 at (4.5, 99.0, 3.5)
+[20Aug2026 14:20:08.013] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ joined the game
+[20Aug2026 14:20:08.050] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Polar34_
+[20Aug2026 14:20:09.256] [Netty Server IO #15/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Polar34_
+[20Aug2026 14:20:09.339] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Polar34_ (20)
+[20Aug2026 14:20:09.339] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Polar34_
+[20Aug2026 14:20:12.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Teleported Polar34_ to Shinzgami]
+[20Aug2026 14:20:49.641] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ was slain by sarah
+[20Aug2026 14:20:51.895] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> hahaha
+[20Aug2026 14:20:54.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> UH OH
+[20Aug2026 14:20:56.588] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=8, y=97, z=14}
+[20Aug2026 14:21:08.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Teleported Polar34_ to Shinzgami]
+[20Aug2026 14:21:10.170] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah fell from a high place
+[20Aug2026 14:21:13.834] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 14:21:49.651] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Shinzgami: Set own game mode to Survival Mode]
+[20Aug2026 14:27:07.236] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> CREEPER
+[20Aug2026 14:27:10.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> WHERE IS MY UHH STUFF
+[20Aug2026 14:27:35.169] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> okay thanks
+[20Aug2026 14:27:52.810] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> is this horror mod
+[20Aug2026 14:28:06.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh
+[20Aug2026 14:28:13.570] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> it sme
+[20Aug2026 14:28:24.387] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh
+[20Aug2026 14:28:26.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> whats horror
+[20Aug2026 14:28:32.985] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> about it
+[20Aug2026 14:28:41.386] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa was slain by Polar34_
+[20Aug2026 14:29:09.515] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> I COME IN PEACE
+[20Aug2026 14:30:53.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Polar34_
+[20Aug2026 14:32:24.336] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Shinzgami
+[20Aug2026 14:32:51.438] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 14:32:54.872] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> HAHAHA
+[20Aug2026 14:34:00.570] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Polar34_
+[20Aug2026 14:34:00.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ was slain by Shinzgami
+[20Aug2026 14:34:03.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa was slain by Shinzgami
+[20Aug2026 14:34:20.111] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by Polar34_
+[20Aug2026 14:34:25.346] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> ITS GETTING LAGGY
+[20Aug2026 14:34:37.248] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> best house oat
+[20Aug2026 14:35:15.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Polar34_
+[20Aug2026 14:35:16.855] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ was slain by sadkewa
+[20Aug2026 14:35:34.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh
+[20Aug2026 14:35:35.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> guys
+[20Aug2026 14:35:39.064] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> GUYS
+[20Aug2026 14:35:44.873] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> COME HERE
+[20Aug2026 14:36:13.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa fell from a high place
+[20Aug2026 14:36:45.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> CREEPER CREEPER
+[20Aug2026 14:36:49.592] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> are u hosting
+[20Aug2026 14:36:56.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> the server
+[20Aug2026 14:37:02.973] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> wait what
+[20Aug2026 14:37:06.917] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> its kinda laggy
+[20Aug2026 14:37:26.144] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uh oh
+[20Aug2026 14:37:35.884] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah withered away
+[20Aug2026 14:37:46.538] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah withered away whilst fighting <0>
+[20Aug2026 14:38:14.694] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> black thing
+[20Aug2026 14:38:21.816] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> stfu
+[20Aug2026 14:38:27.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> no you
+[20Aug2026 14:38:36.420] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> okay not you
+[20Aug2026 14:38:38.160] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> nah im talking to the black dude
+[20Aug2026 14:38:43.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> black thing
+[20Aug2026 14:38:52.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> black nig
+[20Aug2026 14:38:56.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> rigger
+[20Aug2026 14:39:01.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> dagger
+[20Aug2026 14:39:06.488] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> digger
+[20Aug2026 14:39:32.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: i know who you are
+[20Aug2026 14:39:39.848] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> black thing
+[20Aug2026 14:39:42.338] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> no u dont
+[20Aug2026 14:39:45.486] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Shinzgami> orewa monkey d luffy
+[20Aug2026 14:39:51.243] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: come here
+[20Aug2026 14:39:57.188] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> where
+[20Aug2026 14:40:11.842] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah fell from a high place
+[20Aug2026 14:40:13.338] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+[20Aug2026 14:40:13.508] [Server thread/WARN] [net.minecraft.server.network.ServerConnectionListener/]: Failed to handle packet for /192.168.1.6:35525
+net.minecraft.ReportedException: Ticking player
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9933_(ServerGamePacketListenerImpl.java:262) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.network.Connection.m_129483_(Connection.java:263) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.m_9721_(ServerConnectionListener.java:142) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:907) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.4.10.jar%2369!/:1.0]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at net.mcreator.why.procedures.STOPEffectExpiresProcedure.execute(STOPEffectExpiresProcedure.java:5) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.mcreator.why.potion.STOPMobEffect.m_6386_(STOPMobEffect.java:27) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_7285_(LivingEntity.java:1024) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_7285_(ServerPlayer.java:1182) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_21217_(LivingEntity.java:763) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_6075_(LivingEntity.java:432) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.Entity.m_8119_(Entity.java:422) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_8119_(LivingEntity.java:2259) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.player.Player.m_8119_(Player.java:241) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:467) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	... 9 more
+[20Aug2026 14:40:13.515] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+[20Aug2026 14:40:13.622] [Server thread/WARN] [net.minecraft.server.network.ServerConnectionListener/]: Failed to handle packet for /192.168.1.6:35539
+net.minecraft.ReportedException: Ticking player
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9933_(ServerGamePacketListenerImpl.java:262) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.network.Connection.m_129483_(Connection.java:263) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.m_9721_(ServerConnectionListener.java:142) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:907) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.4.10.jar%2369!/:1.0]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at net.mcreator.why.procedures.STOPEffectExpiresProcedure.execute(STOPEffectExpiresProcedure.java:5) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.mcreator.why.potion.STOPMobEffect.m_6386_(STOPMobEffect.java:27) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_7285_(LivingEntity.java:1024) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_7285_(ServerPlayer.java:1182) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_21217_(LivingEntity.java:763) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_6075_(LivingEntity.java:432) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.Entity.m_8119_(Entity.java:422) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_8119_(LivingEntity.java:2259) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.player.Player.m_8119_(Player.java:241) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:467) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	... 9 more
+[20Aug2026 14:40:13.629] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+[20Aug2026 14:40:13.719] [Server thread/WARN] [net.minecraft.server.network.ServerConnectionListener/]: Failed to handle packet for /192.168.1.6:35690
+net.minecraft.ReportedException: Ticking player
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9933_(ServerGamePacketListenerImpl.java:262) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.network.Connection.m_129483_(Connection.java:263) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.m_9721_(ServerConnectionListener.java:142) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:907) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.4.10.jar%2369!/:1.0]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at net.mcreator.why.procedures.STOPEffectExpiresProcedure.execute(STOPEffectExpiresProcedure.java:5) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.mcreator.why.potion.STOPMobEffect.m_6386_(STOPMobEffect.java:27) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_7285_(LivingEntity.java:1024) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_7285_(ServerPlayer.java:1182) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_21217_(LivingEntity.java:763) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_6075_(LivingEntity.java:432) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.Entity.m_8119_(Entity.java:422) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_8119_(LivingEntity.java:2259) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.player.Player.m_8119_(Player.java:241) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:467) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	... 9 more
+[20Aug2026 14:40:13.724] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+[20Aug2026 14:40:13.809] [Server thread/WARN] [net.minecraft.server.network.ServerConnectionListener/]: Failed to handle packet for /192.168.1.6:35714
+net.minecraft.ReportedException: Ticking player
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9933_(ServerGamePacketListenerImpl.java:262) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.network.Connection.m_129483_(Connection.java:263) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.m_9721_(ServerConnectionListener.java:142) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:907) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.4.10.jar%2369!/:1.0]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at net.mcreator.why.procedures.STOPEffectExpiresProcedure.execute(STOPEffectExpiresProcedure.java:5) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.mcreator.why.potion.STOPMobEffect.m_6386_(STOPMobEffect.java:27) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_7285_(LivingEntity.java:1024) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_7285_(ServerPlayer.java:1182) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_21217_(LivingEntity.java:763) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_6075_(LivingEntity.java:432) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.Entity.m_8119_(Entity.java:422) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_8119_(LivingEntity.java:2259) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.player.Player.m_8119_(Player.java:241) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:467) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	... 9 more
+[20Aug2026 14:40:13.814] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+[20Aug2026 14:40:13.888] [Server thread/WARN] [net.minecraft.server.network.ServerConnectionListener/]: Failed to handle packet for /192.168.1.6:35791
+net.minecraft.ReportedException: Ticking player
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9933_(ServerGamePacketListenerImpl.java:262) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.network.Connection.m_129483_(Connection.java:263) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.m_9721_(ServerConnectionListener.java:142) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:907) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.4.10.jar%2369!/:1.0]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at net.mcreator.why.procedures.STOPEffectExpiresProcedure.execute(STOPEffectExpiresProcedure.java:5) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.mcreator.why.potion.STOPMobEffect.m_6386_(STOPMobEffect.java:27) ~[its_not_real-1.1.1.1.1.1.1.1.jar%23146!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_7285_(LivingEntity.java:1024) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_7285_(ServerPlayer.java:1182) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_21217_(LivingEntity.java:763) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_6075_(LivingEntity.java:432) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.Entity.m_8119_(Entity.java:422) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.LivingEntity.m_8119_(LivingEntity.java:2259) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.world.entity.player.Player.m_8119_(Player.java:241) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_9240_(ServerPlayer.java:467) ~[server-1.20.1-20230612.114412-srg.jar%23159!/:?]
+	... 9 more
+[20Aug2026 14:40:13.891] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Moony09_ lost connection: Internal server error
+[20Aug2026 14:40:13.895] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Moony09_ left the game
+[20Aug2026 14:40:13.896] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Moony09_
+[20Aug2026 14:40:13.904] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Shinzgami lost connection: Internal server error
+[20Aug2026 14:40:13.904] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami left the game
+[20Aug2026 14:40:13.905] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Shinzgami
+[20Aug2026 14:40:13.914] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Polar34_ lost connection: Internal server error
+[20Aug2026 14:40:13.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ left the game
+[20Aug2026 14:40:13.915] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Polar34_
+[20Aug2026 14:40:13.923] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sadkewa lost connection: Internal server error
+[20Aug2026 14:40:13.924] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa left the game
+[20Aug2026 14:40:13.924] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client sadkewa
+[20Aug2026 14:40:13.933] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sarah lost connection: Internal server error
+[20Aug2026 14:40:13.934] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah left the game
+[20Aug2026 14:40:13.934] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client sarah
+[20Aug2026 14:40:13.954] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[20Aug2026 14:40:13.955] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[20Aug2026 14:40:13.955] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[20Aug2026 14:40:13.955] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[20Aug2026 14:40:13.955] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[20Aug2026 14:40:21.018] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sadkewa[/192.168.1.6:36325] logged in with entity id 441664 at (-543.494201540947, 72.25999996066093, 1777.6490246802568)
+[20Aug2026 14:40:21.021] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa joined the game
+[20Aug2026 14:40:21.023] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sadkewa
+[20Aug2026 14:40:21.346] [Netty Server IO #17/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sadkewa
+[20Aug2026 14:40:21.652] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sadkewa (20)
+[20Aug2026 14:40:21.653] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sadkewa
+[20Aug2026 14:40:24.715] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Polar34_[/192.168.1.6:36331] logged in with entity id 442445 at (-551.9846323624953, 72.0, 1772.717458755819)
+[20Aug2026 14:40:24.719] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ joined the game
+[20Aug2026 14:40:24.752] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Polar34_
+[20Aug2026 14:40:25.025] [Netty Server IO #19/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Polar34_
+[20Aug2026 14:40:25.129] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Polar34_ (20)
+[20Aug2026 14:40:25.130] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Polar34_
+[20Aug2026 14:40:26.469] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Moony09_[/192.168.1.6:36342] logged in with entity id 442810 at (-583.4816789173096, 72.0, 1789.6218825604533)
+[20Aug2026 14:40:26.472] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Moony09_ joined the game
+[20Aug2026 14:40:26.496] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Moony09_
+[20Aug2026 14:40:26.597] [Netty Server IO #23/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Moony09_
+[20Aug2026 14:40:26.598] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Moony09_ (20)
+[20Aug2026 14:40:26.599] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Moony09_
+[20Aug2026 14:40:41.242] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@512a359d[id=<null>,name=Shinzgami,properties={},legacy=false] (/[::1]:36338) lost connection: Disconnected
+[20Aug2026 14:40:50.586] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@74030635[id=<null>,name=Shinzgami,properties={},legacy=false] (/[::1]:36414) lost connection: Disconnected
+[20Aug2026 14:40:58.065] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Shinzgami[/10.25.99.21:36439] logged in with entity id 450490 at (-635.0690485984023, 84.02442408821369, 1823.0454508792361)
+[20Aug2026 14:40:58.073] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami joined the game
+[20Aug2026 14:40:58.097] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Shinzgami
+[20Aug2026 14:40:58.098] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Shinzgami lost connection: Disconnected
+[20Aug2026 14:40:58.098] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami left the game
+[20Aug2026 14:40:58.099] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Shinzgami
+[20Aug2026 14:40:58.118] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[20Aug2026 14:41:04.016] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Shinzgami[/[::1]:36448] logged in with entity id 452175 at (-635.0690485984023, 84.02442408821369, 1823.0454508792361)
+[20Aug2026 14:41:04.023] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami joined the game
+[20Aug2026 14:41:04.049] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Shinzgami
+[20Aug2026 14:41:05.078] [Netty Server IO #8/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Shinzgami
+[20Aug2026 14:41:05.094] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Shinzgami (20)
+[20Aug2026 14:41:05.094] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Shinzgami
+[20Aug2026 14:41:05.578] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player cbd98727-12d9-37ed-8272-21579cc4249f
+[20Aug2026 14:41:06.578] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player cbd98727-12d9-37ed-8272-21579cc4249f
+[20Aug2026 14:41:06.579] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player Shinzgami (cbd98727-12d9-37ed-8272-21579cc4249f) successfully connected to voice chat
+[20Aug2026 14:41:13.967] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sarah[/192.168.1.6:36457] logged in with entity id 455385 at (-559.9168253000142, 71.0, 1774.1199985185838)
+[20Aug2026 14:41:13.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah joined the game
+[20Aug2026 14:41:14.002] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sarah
+[20Aug2026 14:41:14.251] [Netty Server IO #10/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sarah
+[20Aug2026 14:41:14.252] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sarah (20)
+[20Aug2026 14:41:14.252] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sarah
+[20Aug2026 14:41:46.937] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uho h
+[20Aug2026 14:41:55.560] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh
+[20Aug2026 14:42:00.107] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> come to the bed
+[20Aug2026 14:42:01.294] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> i kept
+[20Aug2026 14:42:06.145] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> oh nvm
+[20Aug2026 14:42:09.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> i was looping in it
+[20Aug2026 14:42:10.186] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 14:42:42.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> little john apartment
+[20Aug2026 14:43:05.691] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> i got a bald house
+[20Aug2026 14:43:22.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> no no its already good
+[20Aug2026 14:44:21.623] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> WE NEED WOOD
+[20Aug2026 14:44:31.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> OH THATS GOOD
+[20Aug2026 14:44:37.887] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> hard hard
+[20Aug2026 14:44:39.954] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> oh thats why
+[20Aug2026 14:44:47.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> peaceful doesnt let it spawn horror mobs
+[20Aug2026 14:45:28.764] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> creeper creeper
+[20Aug2026 14:45:35.293] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> make it normal
+[20Aug2026 14:45:43.491] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> not peaceful
+[20Aug2026 14:45:51.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> okay
+[20Aug2026 14:46:02.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> ohh
+[20Aug2026 14:47:05.173] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa was slain by Polar34_
+[20Aug2026 14:48:42.146] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah has made the advancement [Monster Hunter]
+[20Aug2026 14:48:51.093] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Slime
+[20Aug2026 14:49:15.268] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Shinzgami> -276 1891
+[20Aug2026 14:50:45.122] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> crate
+[20Aug2026 14:51:21.887] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sadkewa lost connection: Timed out
+[20Aug2026 14:51:21.887] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa left the game
+[20Aug2026 14:51:21.889] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client sadkewa
+[20Aug2026 14:51:27.084] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sadkewa[/192.168.1.6:36780] logged in with entity id 641128 at (-404.30000001192093, 121.0, 1780.6191424034298)
+[20Aug2026 14:51:27.090] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa joined the game
+[20Aug2026 14:51:27.127] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sadkewa
+[20Aug2026 14:51:27.432] [Netty Server IO #11/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sadkewa
+[20Aug2026 14:51:27.447] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sadkewa (20)
+[20Aug2026 14:51:27.447] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sadkewa
+[20Aug2026 14:51:37.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> ouh shi
+[20Aug2026 14:51:38.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> rain
+[20Aug2026 14:51:52.645] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> UH OH
+[20Aug2026 14:51:54.594] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> IS THAT YOU KEWA
+[20Aug2026 14:52:41.061] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> bear
+[20Aug2026 14:52:41.955] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> bear
+[20Aug2026 14:52:45.044] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> come
+[20Aug2026 14:52:56.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> you see that
+[20Aug2026 14:53:12.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Moony09_ withered away
+[20Aug2026 14:53:32.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> 2 black guy
+[20Aug2026 14:53:39.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> ITS 3
+[20Aug2026 14:53:40.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> BRO
+[20Aug2026 14:53:42.297] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> 2 BLACK AND 1 WHITE
+[20Aug2026 14:55:15.392] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> it look like
+[20Aug2026 14:55:16.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> some cube
+[20Aug2026 14:55:24.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> im using bsl
+[20Aug2026 14:55:27.203] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> i mean
+[20Aug2026 14:55:34.223] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh complementary unbound
+[20Aug2026 14:55:40.988] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Polar34_ lost connection: Timed out
+[20Aug2026 14:55:40.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ left the game
+[20Aug2026 14:55:40.990] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Polar34_
+[20Aug2026 14:55:51.922] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Polar34_[/192.168.1.6:36914] logged in with entity id 746631 at (-560.3353130366319, 72.0, 1757.300000011921)
+[20Aug2026 14:55:51.926] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ joined the game
+[20Aug2026 14:55:51.969] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to Polar34_
+[20Aug2026 14:55:53.819] [Netty Server IO #14/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from Polar34_
+[20Aug2026 14:55:53.844] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Polar34_ (20)
+[20Aug2026 14:55:53.844] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Polar34_
+[20Aug2026 14:56:16.288] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami has made the advancement [The Parrots and the Bats]
+[20Aug2026 14:56:25.443] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sadkewa lost connection: Disconnected
+[20Aug2026 14:56:25.443] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa left the game
+[20Aug2026 14:56:25.444] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client sadkewa
+[20Aug2026 14:56:37.188] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> WDYM NO
+[20Aug2026 14:57:03.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> monster nearby
+[20Aug2026 14:58:02.322] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sadkewa[/192.168.1.6:36965] logged in with entity id 783284 at (-147.56658886515208, 73.0, 1749.0222521620028)
+[20Aug2026 14:58:02.325] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa joined the game
+[20Aug2026 14:58:02.329] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sadkewa
+[20Aug2026 14:58:03.365] [Netty Server IO #16/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sadkewa
+[20Aug2026 14:58:03.408] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sadkewa (20)
+[20Aug2026 14:58:03.408] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sadkewa
+[20Aug2026 14:58:32.442] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sadkewa lost connection: Timed out
+[20Aug2026 14:58:32.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa left the game
+[20Aug2026 14:58:32.444] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client sadkewa
+[20Aug2026 14:58:39.264] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sadkewa[/192.168.1.6:36982] logged in with entity id 796612 at (-149.21054056890162, 73.0, 1750.4533003968463)
+[20Aug2026 14:58:39.267] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa joined the game
+[20Aug2026 14:58:39.271] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sadkewa
+[20Aug2026 14:58:39.548] [Netty Server IO #18/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sadkewa
+[20Aug2026 14:58:39.641] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sadkewa (20)
+[20Aug2026 14:58:39.641] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sadkewa
+[20Aug2026 14:59:28.788] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 14:59:30.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa has made the advancement [Diamonds!]
+[20Aug2026 14:59:52.502] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 15:00:16.947] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> uhh
+[20Aug2026 15:00:23.497] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> idk dont ask me
+[20Aug2026 15:00:28.474] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> its one mod right
+[20Aug2026 15:00:53.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> maybe more mods?
+[20Aug2026 15:01:45.253] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sarah moved too quickly! -2.9968236653995746,0.33046773958501774,9.694061967345306
+[20Aug2026 15:02:09.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Shinzgami
+[20Aug2026 15:03:38.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: friends are waiting for us.
+[20Aug2026 15:03:44.645] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> okay
+[20Aug2026 15:03:48.383] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ died
+[20Aug2026 15:03:58.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> ouh shi
+[20Aug2026 15:03:59.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Shinzgami> ko ade kawan ke?
+[20Aug2026 15:04:11.883] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ died
+[20Aug2026 15:04:19.009] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Polar34_> butoh pak hang
+[20Aug2026 15:06:18.513] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> SH
+[20Aug2026 15:06:19.694] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> ITS REAL
+[20Aug2026 15:06:31.690] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Shinzgami
+[20Aug2026 15:07:07.670] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 15:07:30.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 15:08:28.272] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 15:08:30.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> hahahaha
+[20Aug2026 15:08:33.640] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> im runnig
+[20Aug2026 15:08:48.673] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah fell from a high place
+[20Aug2026 15:09:22.041] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Shinzgami
+[20Aug2026 15:09:26.094] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> CREATIOVE
+[20Aug2026 15:09:49.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 15:09:55.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sarah was slain by Shinzgami
+[20Aug2026 15:10:19.624] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 15:10:30.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Shinzgami was slain by sarah
+[20Aug2026 15:10:51.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa has made the advancement [The Parrots and the Bats]
+[20Aug2026 15:11:17.735] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 15:13:19.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Moony09_ fell from a high place
+[20Aug2026 15:13:34.185] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sarah moved wrongly!
+[20Aug2026 15:14:04.785] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sarah moved wrongly!
+[20Aug2026 15:14:10.886] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: sadkewa lost connection: Timed out
+[20Aug2026 15:14:10.887] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa left the game
+[20Aug2026 15:14:10.888] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client sadkewa
+[20Aug2026 15:14:54.764] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: sadkewa[/192.168.1.6:37424] logged in with entity id 1093006 at (-551.8822274329959, 68.7531999805212, 1784.4140804690019)
+[20Aug2026 15:14:54.766] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: sadkewa joined the game
+[20Aug2026 15:14:54.794] [Server thread/INFO] [fallingtrees | Config/]: Sending common config 'fallingtrees:fallingtrees_common' to sadkewa
+[20Aug2026 15:14:55.078] [Netty Server IO #19/INFO] [fallingtrees | Config/]: Received client config 'fallingtrees:fallingtrees_client' from sadkewa
+[20Aug2026 15:14:55.090] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of sadkewa (20)
+[20Aug2026 15:14:55.090] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to sadkewa
+[20Aug2026 15:16:13.834] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Moony09_ lost connection: Disconnected
+[20Aug2026 15:16:13.834] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Moony09_ left the game
+[20Aug2026 15:16:13.835] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Moony09_
+[20Aug2026 15:16:45.883] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Polar34_ lost connection: Disconnected
+[20Aug2026 15:16:45.883] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Polar34_ left the game
+[20Aug2026 15:16:45.884] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client Polar34_
+[20Aug2026 15:17:20.084] [Server thread/WARN] [net.minecraft.server.level.ServerLevel/]: Tried to add entity the_wonderland:angel but it was marked as removed already
+[20Aug2026 15:18:23.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <sarah> IM GONNA BE BACK
+[20Aug2026 15:23:41.492] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: there's nothing to be afraid of
+[20Aug2026 15:24:27.644] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: hello

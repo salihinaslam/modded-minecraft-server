@@ -1,0 +1,70 @@
+
+[Timers]
+	"Watcher NOTREAL Minimum Spawn Cooldown" = 7000.0
+	"Watcher NOTREAL Maximum Spawn Cooldown" = 12000.0
+	"Jumpscare NOTREAL Minimum Spawn Cooldown" = 10000.0
+	"Jumpscare NOTREAL Maximum Spawn Cooldown" = 16000.0
+	"The Hallucination Minimum Spawn Cooldown" = 12000.0
+	"The Hallucination Maximum Spawn Cooldown" = 17000.0
+	#This can only happen once per world, after kicked (or not if disabled) it will be replaced with a slowed down version of sweden.
+	"Minimum Entity Kick Cooldown" = 90000.0
+	#This can only happen once per world, after kicked (or not if disabled) it will be replaced with a slowed down version of sweden.
+	"Maximum Entity Kick Cooldown" = 140000.0
+	"Minimum False Structure Cooldown" = 50000.0
+	"Maximum False Structure Cooldown" = 120000.0
+	"Minimum GUI Text Cooldown" = 45000.0
+	"Maximum GUI Text Cooldown" = 75000.0
+	"Minimum Obelisk Spawn Cooldown" = 100000.0
+	"Maximum Obelisk Spawn Cooldown" = 200000.0
+	"Minimum Sentinel Spawn Cooldown" = 17000.0
+	"Maximum Sentinel Spawn Cooldown" = 35000.0
+	"Minimum Null Point Spawn Cooldown" = 18000.0
+	"Maximum Null Point Spawn Cooldown" = 40000.0
+	"The Figure Minimum Spawn Cooldown" = 46000.0
+	"The Figure Maximum Spawn Cooldown" = 66000.0
+	"Flying Hallucination Minimum Spawn Cooldown" = 14000.0
+	"Flying Hallucination Maximum Spawn Cooldown" = 25000.0
+	"Minimum Puppet Spawn Cooldown" = 50000.0
+	"Maximum Puppet Spawn Cooldown" = 73500.0
+
+[Chances]
+	"Stalk Spawn Chance Per Tick" = 5600.0
+	"Jumpscare Spawn Chance Per Tick" = 8200.0
+	"Tree Peeking Hallucination Spawn Chance" = 8.0
+	#Applies to both flying and walking.
+	"Hallucination Spawn Chance Per Tick" = 8200.0
+	#This can only happen once per world, after kicked (or not if disabled) it will be replaced with another variant of this event.
+	"''The Entity'' Event" = 29000.0
+	#There is no cooldown for this one, so don't make it too small
+	"Run Behind ITSNOTREAL Spawn Modifier" = 7600.0
+	"False Structure Generate Chance Per Tick" = 24000.0
+	"GUI Text Display Chance Per Tick" = 32000.0
+	"Obelisk Spawn Chance Per Tick" = 22000.0
+	"Sentinel Spawn Chance Per Tick" = 12000.0
+	"Null Point Spawn Chance Per Tick" = 15000.0
+	"The Figure Spawn Chance Per Tick" = 17000.0
+	"Puppet Spawn Chance Per Tick" = 13500.0
+
+["Random Event Stuff"]
+	"Minimum Random Event Cooldown" = 9000.0
+	"Maximum Random Event Cooldown" = 26000.0
+	"Random Event Chance Per Tick" = 13000.0
+	"Minimum Mob Staring Cooldown" = 48000.0
+	"Maximum Mob Staring Cooldown" = 62000.0
+	"Mob Staring Chance Per Tick" = 16000.0
+	"Enable Mob Staring" = true
+	#might VERY rarely remove blocks, if disabled all structures will be replaced by a null block
+	"Enable Structure Spawning" = true
+	#If false, the null block cannot be placed, and if structure placing is also off, 
+	"Enable Null Block Placing" = true
+	#If true, there is a 1/4 chance a random event is replaced by one of the short tracks that the old mod used to have.
+	"Enable Short Reversed Versions of Minecraft Music" = true
+
+[Kicking]
+	#Enables kicking, obviously
+	Kicking = true
+
+["Spawning Condition Or Something"]
+	#depending on which dimension the entities may not be able to be seen or do what they're intended
+	"Can spawn in all Dimensions" = false
+

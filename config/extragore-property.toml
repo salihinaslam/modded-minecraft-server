@@ -1,0 +1,227 @@
+# ExtraGore Particle Group Configuration
+# ------------------------------------------------------
+# This file enables the creation of custom blood particle properties for various entities.
+# Begin by uniquely naming each property group to effectively manage different settings.
+
+# Particle Behavior Options:
+# - Bounce: The particle will bounce off surfaces like a solid object.
+# - Stick: The particle will stick to walls and other surfaces.
+# - Magic: Some particles will fall to the ground while the majority will fly up to the sky.
+# - None: The particle won't have any special effects.
+
+# Particle Weight Options:
+# - Heavy: The particle will sink to the bottom when it's underwater.
+# - Light: The particle will float up to the top of the water.
+
+# Particle State Options:
+# - Liquid: The particle will get larger during its lifetime.
+# - Solid: The particle will remain the same size all the time.
+
+# Color Settings:
+# Set an RGB color value to visually distinguish particles for various entities.
+
+# How to Use:
+# 1. Define a group with a name, including behavior, weight, state, color and entity values.
+# 2. Example:
+#    ["Color Group Name"]
+#    behavior = Choose from "Stuck", "Bounce" or "None"
+#    weight = Choose from "Heavy" or "Light"
+#    state = Choose from "Liquid" or "Solid"
+#    color = "R,G,B"
+#    entities = ["entityID1", "entityID2"]
+# 3. You can modify or delete any predefined groups, except for the red group. The red group is non editable and serves only to show you unused entities which are compatible with different color groups.
+# 4. Add your custom color groups under an already predefined group, except for the red one.
+# 5. Ensure each color group has a unique name and is properly structured.
+
+# Note: Incorrectly formatted lines or unrecognized entity IDs will be ignored.
+# ------------------------------------------------------
+
+["Violet Group"]
+behavior = "Magic"
+weight = "Light"
+state = "Liquid"
+color = "128,0,128"
+entities = ["minecraft:enderman", "minecraft:endermite", "minecraft:phantom", "minecraft:shulker", "minecraft:silverfish", "minecraft:warden", "minecraft:ender_dragon"]
+
+["White Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,255"
+entities = ["minecraft:skeleton", "minecraft:ghast", "minecraft:iron_golem", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:vex", "minecraft:wither_skeleton", "minecraft:allay", "minecraft:wither"]
+
+["Green Group"]
+behavior = "Stuck"
+weight = "Light"
+state = "Liquid"
+color = "0,255,0"
+entities = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:slime", "minecraft:spider", "minecraft:witch"]
+
+["Yellow Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,0"
+entities = ["minecraft:blaze", "minecraft:magma_cube", "minecraft:strider"]
+
+["Blue Group"]
+behavior = "None"
+weight = "Light"
+state = "Liquid"
+color = "0,0,255"
+entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:glow_squid"]
+
+# Auto generated red color group - do not edit. Use this as reference for unused entity IDs.
+"255,0,0" = [
+    "minecraft:giant",
+    "the_wonderland:no_one_following",
+    "the_wonderland:skinless_chase",
+    "minecraft:trader_llama",
+    "the_wonderland:answer_3_spawner",
+    "the_wonderland:invisible_follower",
+    "the_wonderland:sorrow_idle",
+    "the_wonderland:no_one_twisted_stalk",
+    "minecraft:horse",
+    "the_wonderland:angel",
+    "minecraft:llama",
+    "minecraft:husk",
+    "the_wonderland:carrier_aggro",
+    "the_wonderland:the_entity_stalking",
+    "the_wonderland:the_eyed",
+    "its_not_real:the_entity_dark_watcher",
+    "minecraft:tadpole",
+    "minecraft:dolphin",
+    "the_wonderland:watching",
+    "its_not_real:you",
+    "the_wonderland:eyed_flesh_jumpscare",
+    "the_wonderland:carrier",
+    "the_wonderland:no_one",
+    "minecraft:donkey",
+    "its_not_real:obelisk_1",
+    "minecraft:piglin_brute",
+    "its_not_real:hallucination_peek",
+    "the_wonderland:the_entity_lurk",
+    "the_wonderland:flicker",
+    "the_wonderland:wasonce",
+    "its_not_real:running_twat",
+    "the_wonderland:someone",
+    "minecraft:bee",
+    "minecraft:illusioner",
+    "the_wonderland:demonic_fish",
+    "minecraft:mooshroom",
+    "the_wonderland:wanderer",
+    "the_wonderland:no_one_twisted_hunt",
+    "minecraft:drowned",
+    "the_wonderland:no_one_stalking",
+    "the_wonderland:the_entity_mimicking",
+    "minecraft:axolotl",
+    "the_wonderland:pillar_idle",
+    "the_wonderland:the_eye_following",
+    "minecraft:parrot",
+    "the_wonderland:insomnia",
+    "the_wonderland:pillar_aggro",
+    "its_not_real:itsnotreal_scare",
+    "the_wonderland:helpless",
+    "the_wonderland:the_sphere_chase",
+    "minecraft:wandering_trader",
+    "the_wonderland:wondertree_stalking",
+    "the_wonderland:siren",
+    "minecraft:frog",
+    "the_wonderland:wanderer_gift",
+    "the_wonderland:the_entity_invisible",
+    "the_wonderland:the_hoarder_chase",
+    "the_wonderland:fate_normal",
+    "the_wonderland:eyed_flesh",
+    "minecraft:mule",
+    "minecraft:vindicator",
+    "the_wonderland:the_fate",
+    "the_wonderland:remember_me",
+    "minecraft:evoker",
+    "minecraft:pufferfish",
+    "its_not_real:imaginary",
+    "the_wonderland:sorrow_stalk",
+    "minecraft:fox",
+    "the_wonderland:vessel",
+    "minecraft:chicken",
+    "the_wonderland:the_entity_chasing",
+    "minecraft:zombie",
+    "the_wonderland:eyeless",
+    "the_wonderland:the_entity_staring",
+    "its_not_real:evets",
+    "the_wonderland:the_spawn_flee",
+    "its_not_real:itsnotreal_laugh",
+    "the_wonderland:wondertree_chasing",
+    "the_wonderland:the_hoarder_stalk_2",
+    "the_wonderland:the_hoarder_stalk_3",
+    "its_not_real:itsnotreal_1",
+    "its_not_real:itsnotreal_2",
+    "the_wonderland:the_hoarder_stalk_1",
+    "minecraft:hoglin",
+    "the_wonderland:the_entity_fake_stalk",
+    "the_wonderland:no_one_distant_following",
+    "the_wonderland:the_red_eye_following",
+    "minecraft:polar_bear",
+    "the_wonderland:yourmind_stalking",
+    "its_not_real:fake_creeper",
+    "minecraft:zombified_piglin",
+    "its_not_real:figure",
+    "the_wonderland:somebody",
+    "minecraft:pig",
+    "minecraft:turtle",
+    "minecraft:sheep",
+    "the_wonderland:the_red_eye_chasing",
+    "the_wonderland:yourmind_flying",
+    "minecraft:goat",
+    "the_wonderland:the_eye_chasing",
+    "the_wonderland:sorrow_behind",
+    "the_wonderland:woodseeker",
+    "its_not_real:itsnotreal",
+    "the_wonderland:pillar_stare",
+    "minecraft:cod",
+    "the_wonderland:vessel_chase",
+    "minecraft:ravager",
+    "the_wonderland:wanderer_stalk",
+    "the_wonderland:no_one_stalking_2",
+    "minecraft:cow",
+    "minecraft:salmon",
+    "the_wonderland:no_one_twisted",
+    "the_wonderland:no_one_flying",
+    "its_not_real:your_friend",
+    "minecraft:rabbit",
+    "the_wonderland:messenger",
+    "minecraft:pillager",
+    "its_not_real:puppet_1",
+    "minecraft:zoglin",
+    "the_wonderland:pillar_haunt",
+    "its_not_real:hallucination",
+    "the_wonderland:brickways_entrance_big_spawner",
+    "its_not_real:the_entity",
+    "the_wonderland:empty_vessel",
+    "the_wonderland:skinless_stare",
+    "the_wonderland:ethereal_demon",
+    "the_wonderland:yourmind_chase",
+    "minecraft:bat",
+    "its_not_real:everywhere_sleep_watch",
+    "its_not_real:structure_placer",
+    "the_wonderland:invisible_follower_stalk",
+    "minecraft:piglin",
+    "its_not_real:sentinel",
+    "the_wonderland:the_spawn_stare_1",
+    "the_wonderland:the_spawn_stare_2",
+    "the_wonderland:the_spawn_chase",
+    "its_not_real:invisible",
+    "minecraft:sniffer",
+    "minecraft:zombie_horse",
+    "minecraft:camel",
+    "the_wonderland:the_sphere",
+    "its_not_real:hallucination_2",
+    "minecraft:cat",
+    "its_not_real:null_point",
+    "the_wonderland:no_one_twisted_flying",
+    "minecraft:tropical_fish",
+    "minecraft:ocelot",
+    "minecraft:wolf",
+    "minecraft:panda",
+    "minecraft:zombie_villager",
+    "the_wonderland:ethereal_demon_stalk"
+]
